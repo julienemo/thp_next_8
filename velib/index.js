@@ -39,8 +39,7 @@ const fillPage = () => {
     stationInfoZone.innerHTML = '';
     // see comments below
     scope.forEach((record)=>{
-      nbClassicalBikes = record.fields.numbikesavailable - record.fields.ebike 
-      showStation(stationInfoZone, record.fields.name, nbClassicalBikes, record.fields.ebike)   
+      showStation(stationInfoZone, record.fields.name, record.fields.mechanical, record.fields.ebike)   
     });
   }).catch((error) => console.log(error));
 }

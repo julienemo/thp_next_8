@@ -5,3 +5,9 @@ ul li{
 .small {
   font-size: 0.7em;
 }
+
+/* for leaflet */
+#mapid {
+  height: 180px; 
+  width: 75%;
+}
